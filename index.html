@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="p-5">
+    <header class="container mx-auto">
+      <nav
+        class="
+          fixed
+          w-screen
+          overflow-hidden
+          z-10
+          bottom-0
+          left-0
+          bg-white
+          shadow-2xl shadow-indigo-500/50
+          md:relative md:shadow-none md:w-auto
+        "
+      >
+        <ul
+          class="
+            list-none
+            flex flex-row
+            justify-center
+            items-stretch
+            md:items-center
+            text-gray-500 text-sm
+            md:justify-end md:text-base
+            w-full
+          "
+        >
+          <li class="w-1/3 md:w-auto px-3 md:px-5 py-2 mx-2 text-center">
+            <a
+              href="#projekty"
+              class="
+                hover:underline hover:text-gray-800
+                transition-colors
+                decoration-violet-700 decoration-wavy decoration-2
+                leading-10
+              "
+            >
+              Projekty
+            </a>
+          </li>
+          <li class="w-1/3 md:w-auto px-3 md:px-5 py-2 mx-2 text-center">
+            <a
+              href="#praca"
+              class="
+                hover:underline hover:text-gray-800
+                transition-colors
+                decoration-violet-700 decoration-wavy decoration-2
+                leading-10
+              "
+            >
+              Praca
+            </a>
+          </li>
+          <li class="w-1/3 md:w-auto px-3 md:px-5 py-2 mx-2 text-center">
+            <a
+              href="#kontakt"
+              class="
+                hover:underline hover:text-gray-800
+                transition-colors
+                decoration-violet-700 decoration-wavy decoration-2
+                leading-10
+              "
+            >
+              Kontakt
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <section>
+          <h1 class="text-6xl leading-tight mb-5">
+            👋
+            <br />
+            Cześć
+          </h1>
+          <p class="text-xl md:text-2xl mb-5">
+            Jestem Mikołaj Waśkowski i...
+            <br />
+            nie jestem typowym front-end developerem.
+          </p>
+          <p class="md:text-xl text-gray-500 leading-normal mb-10">
+            Praca z kodem nie jest dla mnie wystarczająca.
+            <br />
+            Uwielbiam, już od samego początku, pracować nad tym,
+            aby apikacja miała dobry UI i UX.
+          </p>
+          <div class="flex flex-row items-center mb-5">
+            <span class="text-3xl leading-none mr-4">🎨</span>
+            <p class="md:text-xl text-gray-500 leading-normal">
+              Zrobię szybki research, napiszę dokumentację,
+              zaprojektuję prototypy i design aplikacji.
+            </p>
+          </div>
+          <div class="flex flex-row items-center mb-5">
+            <span class="text-3xl leading-none mr-4">👨‍💻</span>
+            <p class="md:text-xl text-gray-500 leading-normal">
+              Z pomocą backendowców,
+              <br />
+              wdrożę projekt w życie.
+            </p>
+          </div>
+          <img src="images/stack.png" alt="" class="block max-w-full my-16" />
+        </section>
+        <section></section>
+      </div>
+    </header>
+    <main class="container mx-auto">
+      <div
+        class="
+          px-6
+          sm:px-8
+          py-6
+          bg-violet-50
+          rounded-xl
+          text-violet-700
+          w-full
+          mt-10
+          sm:w-4/5
+          md:w-2/3
+          xl:w-1/2
+        "
+      >
+        <img src="images/uxowy.svg" alt="" class="block max-w-full mb-3" />
+        <p>
+          Jestem autorem uxowy.dev - newslettera dla developerów, którzy chcą
+          robić aplikacje z lepszym UI i UX, małym nakładem pracy. Zdobyłem już
+          zaufanie ponad 500 ludzi 👀
+        </p>
+      </div>
+
+      <h2 id="projekty" class="text-5xl mt-32">Projekty</h2>
+      <section class="mt-16">
+        <div class="flex flex-row items-center justify-start">
+          <span class="w-4 h-4 rounded-full bg-violet-700 mr-4"></span>
+          <h3 class="text-2xl">
+            uxowy.dev  
+            <span class="text-gray-300 whitespace-nowrap">2021 - teraz</span>
+          </h3>
+        </div>
+        <div
+          class="
+            pl-6
+            ml-2
+            border-l border-gray-200
+            py-5
+            flex flex-col
+            items-start
+            md:flex-row
+          "
+        >
+          <img
+            src="images/screen-uxowy.jpg"
+            alt="Ekran uxowy.dev"
+            class="rounded-xl shadow-xl shadow-violet-200/50 md:mr-3"
+          />
+          <div class="text-base md:text-lg px-2 md:px-5 pt-5 pb-20">
+            <h5 class="text-xl mb-6">
+              Portal do publikacji newslettera i bloga oparty na systemie Ghost.
+            </h5>
+            <p class="text-gray-500 mb-6">
+              To mój pierwszy, w pełni autorski projekt, który nabrał rozpędu i
+              służy większej grupie odbiorców. Wcześniej były: robimyaukcje.pl,
+              lepszyfront.pl, ngcert.pl i inne, ale nie przyjęły się z tak
+              pozytywną reakcją odbiorców i je porzuciłem.
+            </p>
+            <p class="text-gray-500">
+              Portal spełnia rolę MVP projektu uxowy.dev.
+              <br />
+              Dzięki wybranym technologiom, w bardzo krótkim czasie utworzyłem
+              platformę, na której można:
+            </p>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>zbierać subskrybentów z możliwością planów płatnych</li>
+              <li>wysyłać newsletter tworzyć wpisy na blogu</li>
+              <li>tworzyć standardowe strony z treścią</li>
+              <li>tworzyć niezliczone integracje z innymi platformami</li>
+            </ul>
+            <h4 class="mb-2">Użyte technologie:</h4>
+            <div class="flex flex-row flex-wrap items-center mb-6">
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Ghost
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Figma
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Hotjar
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Integromat
+              </span>
+            </div>
+            <h4>Zakres prac:</h4>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>utworzenie brandu uxowy.dev - logo & design</li>
+              <li>utworzenie portalu na systemie Ghost,</li>
+              <li>konfiguracja serwera (VPS),</li>
+              <li>dostosowanie wyglądu portalu w Handlebars</li>
+              <li>
+                skonfigurowanie integracji z zewnętrznymi usługami, m.in.:
+                Mailgun, Integromat, Zapier
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-row items-center justify-start">
+          <span class="w-4 h-4 rounded-full bg-blue-700 mr-4"></span>
+          <h3 class="text-2xl">
+            Ja Pojadę  
+            <span class="text-gray-300 whitespace-nowrap">2021 - teraz</span>
+          </h3>
+        </div>
+        <div
+          class="
+            pl-6
+            ml-2
+            border-l border-gray-200
+            py-5
+            flex flex-col
+            items-start
+            md:flex-row
+          "
+        >
+          <img
+            src="images/screen-jpj.jpg"
+            alt="Ekran ja-pojade.pl"
+            class="rounded-xl shadow-xl shadow-blue-100/50 md:mr-3"
+          />
+          <div class="text-base md:text-lg px-2 md:px-5 pt-5 pb-20">
+            <h5 class="text-xl mb-6">
+              Innowacyjny system rekrutacji kierowców.
+            </h5>
+            <p class="text-gray-500 mb-6">
+              Moją misją w tym projekcie, poza programowaniem, jest poprawa UI i
+              UX aplikacji.
+              <br />
+              Prace trwają 🔥
+            </p>
+            <h4 class="mb-2">Użyte technologie:</h4>
+            <div class="flex flex-row flex-wrap items-center mb-6">
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Angular 12
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                NgRx Store & Effects
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Ant Design
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Figma
+              </span>
+            </div>
+            <h4>Zakres prac:</h4>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>podstawowy research UX</li>
+              <li>
+                tworzenie prototypów i designu aplikacji webowej i mobilnej
+              </li>
+              <li>programowanie frontu aplikacji webowej</li>
+              <li>przyjmowanie zgłoszeń ze strony biznesu</li>
+              <li>"tłumaczenie" języka biznesu na język programistów</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-row items-center justify-start">
+          <span class="w-4 h-4 rounded-full bg-green-600 mr-4"></span>
+          <h3 class="text-2xl">
+            SkyRocket.trade  
+            <span class="text-gray-300 whitespace-nowrap">2018 - 2021</span>
+          </h3>
+        </div>
+        <div
+          class="
+            pl-6
+            ml-2
+            border-l border-gray-200
+            py-5
+            flex flex-col
+            items-start
+            md:flex-row
+          "
+        >
+          <img
+            src="images/screen-sr.jpg"
+            alt="Ekran skyrocket.trade"
+            class="rounded-xl shadow-xl shadow-green-100/50 md:mr-3"
+          />
+          <div class="text-base md:text-lg px-2 md:px-5 pt-5 pb-20">
+            <h5 class="text-xl mb-6">
+              Platforma do handlowania kryptowalutami na najpopularniejszych
+              giełdach, oferująca niedostępne tam zaawansowane funkcjonalności i
+              narzędzia.
+            </h5>
+            <p class="text-gray-500 mb-6">
+              Był to jak dotychczas najbardziej skomplikowany i wymagający
+              projekt frontowy, jaki miałem okazję tworzyć. Odkryłem w nim m.in.
+              sposoby na poprawienie szybkości aplikacji Angularowej
+              i optymalizację kodu. Napisałem w nim też swoje pierwsze testy
+              jednostkowe.
+            </p>
+            <h4 class="mb-2">Użyte technologie:</h4>
+            <div class="flex flex-row flex-wrap items-center mb-6">
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Angular
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                NgRx Store & Effects
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Material Design
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                TradingView Charting lib
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                WebSockets
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Figma
+              </span>
+            </div>
+            <h4>Zakres prac:</h4>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>podstawowy research UX</li>
+              <li>
+                tworzenie prototypów i designu aplikacji webowej i mobilnej
+              </li>
+              <li>programowanie frontu aplikacji webowej</li>
+              <li>przyjmowanie zgłoszeń ze strony biznesu</li>
+              <li>"tłumaczenie" języka biznesu na język programistów</li>
+            </ul>
+            <h4 class="mb-2">Referencje:</h4>
+            <a href="images/ref-sr.png" target="_blank" class="inline-block">
+              <span class="text-xs text-gray-400">Kliknij, aby zobaczyć:</span>
+              <img
+                src="images/ref-sr.png"
+                alt="Miniatura referencji"
+                class="block w-64 max-w-full h-auto rounded-xl border my-2"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-row items-center justify-start">
+          <span class="w-4 h-4 rounded-full bg-cyan-200 mr-4"></span>
+          <h3 class="text-2xl">
+            De Diet Catering  
+            <span class="text-gray-300 whitespace-nowrap">2020 - 2021</span>
+          </h3>
+        </div>
+        <div
+          class="
+            pl-6
+            ml-2
+            border-l border-gray-200
+            py-5
+            flex flex-col
+            items-start
+            md:flex-row
+          "
+        >
+          <img
+            src="images/screen-bdc.jpg"
+            alt="Ekran bedietcatering.pl"
+            class="rounded-xl shadow-xl shadow-cyan-50/50 md:mr-3"
+          />
+          <div class="text-base md:text-lg px-2 md:px-5 pt-5 pb-20">
+            <h5 class="text-xl mb-6">
+              Jeden z największych dostawców diety pudełkowej w Polsce tworzony
+              we współpracy z Ewą Chodakowską.
+            </h5>
+            <p class="text-gray-500 mb-6">
+              Po raz pierwszy miałem tutaj styczność z komercyjnym
+              wykorzystaniem Vue i Vuex. Bralem udział w wykonaniu wewnętrznego
+              systemu do realizacji zamówień, publicznego formularza do
+              składania zamówień i pierwszej wersji panelu klienta.
+            </p>
+            <h4 class="mb-2">Użyte technologie:</h4>
+            <div class="flex flex-row flex-wrap items-center mb-6">
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Vue
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Vuex
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Tailwind CSS
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Mocks
+              </span>
+            </div>
+            <h4>Zakres prac:</h4>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>proponowanie rozwiązań i tworzenie mocków</li>
+              <li>design elementów stron publicznych</li>
+              <li>programowanie frontu aplikacji webowej</li>
+            </ul>
+            <h4 class="mb-2">Referencje:</h4>
+            <a
+              href="images/ref-bdc-full.png"
+              target="_blank"
+              class="inline-block"
+            >
+              <span class="text-xs text-gray-400">Kliknij, aby zobaczyć:</span>
+              <img
+                src="images/ref-bdc.png"
+                alt="Miniatura referencji"
+                class="block w-36 max-w-full h-auto rounded-xl border my-2"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-row items-center justify-start">
+          <span class="w-4 h-4 rounded-full bg-sky-600 mr-4"></span>
+          <h3 class="text-2xl">
+            AgileBoard  
+            <span class="text-gray-300 whitespace-nowrap">2017 - 2019</span>
+          </h3>
+        </div>
+        <div
+          class="
+            pl-6
+            ml-2
+            border-l border-gray-200
+            py-5
+            flex flex-col
+            items-start
+            md:flex-row
+          "
+        >
+          <img
+            src="images/screen-ab.jpg"
+            alt="Ekran agileboard.me"
+            class="rounded-xl shadow-xl shadow-sky-100/50 md:mr-3"
+          />
+          <div class="text-base md:text-lg px-2 md:px-5 pt-5 pb-20">
+            <h5 class="text-xl mb-6">
+              System do organizacji pracy. Zapewnia łatwe planowanie
+              i gromadzenie wszelkich danych o projekcie m.in. bazę wiedzy,
+              pliki, zadania.
+            </h5>
+            <p class="text-gray-500 mb-6">
+              Był to mój pierwszy komercyjny projekt, w którym brałem udział.
+              Uczyłem się, pod okiem doświadczonego developera, programowania
+              frontu z pomocą frameworka AngularJs.
+            </p>
+            <h4 class="mb-2">Użyte technologie:</h4>
+            <div class="flex flex-row flex-wrap items-center mb-6">
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                AngularJS
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Material Design
+              </span>
+            </div>
+            <h4>Zakres prac:</h4>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>wdrażanie nowych funkcjonalności</li>
+              <li>programowanie aplikacji frontowej</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="flex flex-row items-center justify-start">
+          <span class="w-4 h-4 rounded-full bg-orange-600 mr-4"></span>
+          <h3 class="text-2xl">
+            mamwiecej.pl  
+            <span class="text-gray-300 whitespace-nowrap">2017</span>
+          </h3>
+        </div>
+        <div class="pl-6 ml-2 py-5 flex flex-col items-start md:flex-row">
+          <img
+            src="images/screen-mamwiecej.jpg"
+            alt="mamwiecej.pl w UXPin"
+            class="rounded-xl shadow-xl shadow-orange-100/50 md:mr-3"
+          />
+          <div class="text-base md:text-lg px-2 md:px-5 pt-5">
+            <h5 class="text-xl mb-6">
+              Aplikacja internetowa do zarządzania budżetem domowym,
+              analizowania kosztów i planowania inwestycji.
+            </h5>
+            <p class="text-gray-500 mb-6">
+              Była to pierwsza większa aplikacja internetowa stworzona w całości
+              przeze mnie.
+              <br />
+              Wykonana jako praca inżynierska na kierunku teleinformatyka (inż).
+              <br />
+              Praca obroniona na 5. 😉
+            </p>
+            <h4 class="mb-2">Użyte technologie:</h4>
+            <div class="flex flex-row flex-wrap items-center mb-6">
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Laravel
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Vue
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                UXPin
+              </span>
+              <span
+                class="px-3 bg-violet-50 text-violet-700 rounded-lg mr-2 mb-2"
+              >
+                Sketch
+              </span>
+            </div>
+            <h4>Zakres prac:</h4>
+            <ul class="text-gray-500 list-disc pl-8 mt-3 mb-6">
+              <li>wykonanie dokumentacji na potrzeby pracy dyplomowej</li>
+              <li>
+                projekt interfejsu użytkownika - duży nacisk na prostotę i
+                łatwość użytkowania
+              </li>
+              <li>utworzenie prototypu w UXPin</li>
+              <li>zaprogramowanie frontu aplikacji webowej</li>
+              <li>zaprogramowanie backendu aplikacji, utworzenie API</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <h2 id="praca" class="text-5xl mt-32 mb-16">Praca</h2>
+      <section>
+        <p class="text-2xl">Jestem aktualnie otwarty na propozycje:</p>
+        <ul class="text-gray-500 list-disc pl-8 mt-3 mb-10">
+          <li>współpracy B2B</li>
+          <li>w wymiarze 6 godzin dziennie (30h tygodniowo)</li>
+          <li>jako front-end developer</li>
+          <li>
+            który realizuje lub bierze czynny udział w procesie projektowania
+            aplikacji (UI/UX)
+          </li>
+          <li>w zespole, w którym panuje luźna atmosfera</li>
+          <li>pracując w ustalonym systemie organizacji pracy</li>
+          <li>
+            w którym mam dostęp do bardzo doświadczonego front-end developera w
+            celach konsultacji (nie uważam się za super-seniora)
+          </li>
+        </ul>
+        <p class="mb-6">
+          Wynagrodzenie jest dla mnie tylko wynikiem dobrze wykonanej pracy.
+          <br />
+          To nie na nim się skupiam, a na projekcie, który będę realizował.
+        </p>
+        <p>
+          Jeśli szukasz aktualnie front-end developera i wszystkie powyższe
+          punkty zgadzają się z Twoją ofertą, będę bardziej niż wdzięczny za
+          kontakt.
+        </p>
+      </section>
+    </main>
+    <footer class="container mx-auto">
+      <h2 id="kontakt" class="text-5xl mt-32 mb-16">Kontakt</h2>
+      <section>
+        <div class="flex flex-row items-center mb-6">
+          <img src="images/mail.svg" alt="" class="mr-4" />
+          <a
+            href="mailto:waskowski.mikolaj@gmail.com"
+            class="underline hover:text-violet-900"
+          >
+            waskowski.mikolaj@gmail.com
+          </a>
+        </div>
+        <div class="flex flex-row items-center mb-6">
+          <img src="images/in.svg" alt="" class="mr-4" />
+          <a
+            href="https://www.linkedin.com/in/waskowskimikolaj/"
+            class="underline hover:text-violet-900"
+          >
+            waskowskimikolaj
+          </a>
+        </div>
+        <div class="flex flex-row items-center mb-6">
+          <img src="images/fb.svg" alt="" class="mr-4" />
+          <a
+            href="https://www.facebook.com/waskowski.mikolaj"
+            class="underline hover:text-violet-900"
+          >
+            waskowski.mikolaj
+          </a>
+        </div>
+      </section>
+
+      <section class="block mt-24 pb-16">
+        <p class="text-sm text-gray-300">
+          Created with HTML & Tailwind CSS only. No frameworks, no JavaScript.
+          <br />
+          Just a simple HTML document.
+          <br />
+          Mikołaj Waśkowski.
+        </p>
+      </section>
+    </footer>
+  </body>
+</html>
+
+<!-- <a
+        href="#"
+        class="
+          bg-indigo-500
+          shadow-lg shadow-indigo-500/50
+          text-white
+          px-5
+          pt-2
+          pb-3
+          rounded-xl
+          leading-none
+          m-2
+        "
+      >
+        Subscribe
+      </a> -->
+
+<!-- <a
+        href="#"
+        class="underline decoration-violet-700 decoration-wavy decoration-2"
+        >test</a
+      > -->
