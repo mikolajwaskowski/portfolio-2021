@@ -430,6 +430,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
+  --tw-backdrop-blur: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-brightness: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-contrast: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-grayscale: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-hue-rotate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-invert: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-opacity: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-saturate: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-sepia: var(--tw-empty,/*!*/ /*!*/);
+  --tw-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .container {
@@ -698,6 +708,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-left-width: 1px;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-t {
+  border-top-width: 1px;
+}
+
 .border-gray-200 {
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
@@ -706,6 +724,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-violet-200 {
   --tw-border-opacity: 1;
   border-color: rgb(221 214 254 / var(--tw-border-opacity));
+}
+
+.border-violet-600 {
+  --tw-border-opacity: 1;
+  border-color: rgb(124 58 237 / var(--tw-border-opacity));
+}
+
+.border-violet-100 {
+  --tw-border-opacity: 1;
+  border-color: rgb(237 233 254 / var(--tw-border-opacity));
 }
 
 .bg-white {
@@ -746,6 +774,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-orange-600 {
   --tw-bg-opacity: 1;
   background-color: rgb(234 88 12 / var(--tw-bg-opacity));
+}
+
+.bg-white\/30 {
+  background-color: rgb(255 255 255 / 0.3);
+}
+
+.bg-white\/60 {
+  background-color: rgb(255 255 255 / 0.6);
 }
 
 .p-5 {
@@ -963,6 +999,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-shadow: var(--tw-shadow-colored);
 }
 
+.shadow-violet-500 {
+  --tw-shadow-color: #8b5cf6;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.backdrop-blur {
+  --tw-backdrop-blur: blur(8px);
+  -webkit-backdrop-filter: var(--tw-backdrop-filter);
+          backdrop-filter: var(--tw-backdrop-filter);
+}
+
 .transition-colors {
   transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
@@ -1040,6 +1087,10 @@ body {
 
   .md\:justify-end {
     justify-content: flex-end;
+  }
+
+  .md\:border-none {
+    border-style: none;
   }
 
   .md\:px-5 {
